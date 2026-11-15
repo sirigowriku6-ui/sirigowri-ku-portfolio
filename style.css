@@ -1,24 +1,25 @@
-/* General Styling */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    margin: 0;
-    padding: 20px;
-}
-
-/* Heading Styling */
-h1 {
-    color: #2c3e50;
-    text-align: center;
-}
-
-h2 {
-    color: #3498db;
-}
-
-/* Paragraph Styling */
-p {
-    font-size: 16px;
-    line-height: 1.6;
+/* style.css - Sirigowri Portfolio */
+:root { --brand: #0b63c2; --ink: #16293f; --light: #f2f7ff; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: system-ui, -apple-system, sans-serif; color: var(--ink); line-height: 1.6; }
+nav { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 1rem; background: var(--ink); }
+nav a { color: #fff; text-decoration: none; padding: 0.5rem; }
+.logo { font-weight: 700; font-size: 1.2rem; }
+.nav-links { display: flex; gap: 0.5rem; }
+section { max-width: 960px; margin: 0 auto; padding: 3rem 1rem; }
+.hero { text-align: center; background: var(--light); border-radius: 16px; margin-top: 1rem; }
+h1 { font-size: 2.5rem; margin-bottom: 0.2rem; }
+h2 { color: var(--brand); }
+.cards { display: grid; gap: 1rem; padding: 0; list-style: none; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.cards li, .cards article { padding: 1rem; border: 1px solid #0d5e5e; border-radius: 12px; background: #fff; }
+.btn { display: inline-block; background: var(--brand); color: #fff; padding: 0.7rem 1.2rem; border-radius: 8px; text-decoration: none; margin: 0.3rem; }
+.btn-outline { background: transparent; color: var(--brand); border: 2px solid var(--brand); }
+footer { background: var(--ink); color: #fff; text-align: center; padding: 2.5rem 1rem; }
+footer a { color: #aee2ff; }
+a:focus { outline: 3px solid #ffbf00; outline-offset: 2px; }
+@media (max-width: 700px) {
+  nav, .nav-links { flex-direction: column; align-items: center; }
+  h1 { font-size: 1.9rem; }
+  .btn { width: 100%; text-align: center; }
 }
