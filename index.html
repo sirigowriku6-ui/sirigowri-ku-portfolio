@@ -1,62 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sirigowri K U | Aspiring Full Stack Developer</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sirigowri K U - Portfolio</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif; }
+body { background:#f8fafc; color:#1e293b; line-height:1.6; }
+header { background:#0f3555; color:white; padding:20px; text-align:center; }
+header h1 { font-size:28px; }
+header p { font-size:14px; margin-top:6px; }
+header a { color:#bfdbfe; text-decoration:none; }
+nav { background:white; display:flex; justify-content:center; gap:20px; padding:12px; position:sticky; top:0; box-shadow:0 1px 5px rgba(0,0,0,0.1); }
+nav a { color:#0f3555; text-decoration:none; font-weight:bold; font-size:14px; }
+main { max-width:900px; margin:auto; padding:20px; }
+section { background:white; padding:20px; border-radius:12px; margin-bottom:20px; box-shadow:0 2px 8px rgba(0,0,0,0.05); }
+h2 { color:#0f3555; margin-bottom:10px; border-bottom:2px solid #e2e8f0; padding-bottom:6px; }
+.grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px; margin-top:10px; }
+.card { background:#eff6ff; padding:14px; border-radius:10px; text-align:center; font-weight:bold; font-size:14px; }
+.project-grid { display:grid; grid-template-columns:1fr 1fr; gap:15px; margin-top:10px; }
+.project { background:#f1f5f9; padding:15px; border-radius:10px; }
+.project h3 { color:#0f3555; margin-bottom:6px; }
+.project p { font-size:14px; }
+ul { padding-left:20px; font-size:15px; }
+li { margin-bottom:6px; }
+footer { background:#0f3555; color:white; text-align:center; padding:15px; font-size:14px; }
+footer a { color:#bfdbfe; }
+@media (max-width:700px) {
+  .grid { grid-template-columns:1fr 1fr; }
+  .project-grid { grid-template-columns:1fr; }
+  nav { flex-wrap:wrap; gap:12px; }
+}
+</style>
 </head>
 <body>
-  <header>
-    <nav aria-label="Main navigation">
-      <a href="#about" class="logo">Sirigowri K U</a>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+
+<header>
+  <h1>Sirigowri K U</h1>
+  <p>Computer Science Engineering Student | 2nd Year</p>
+  <p>+91 9353145799 | <a href="mailto:sirigowriku4@gmail.com">sirigowriku4@gmail.com</a></p>
+  <p><a href="https://www.linkedin.com/in/sirigowriku-k-u-658291364">LinkedIn</a> | <a href="https://github.com/sirigowriku6-ui">GitHub</a> | <a href="https://sirigowriku6-ui.github.io/sirigowri-ku-portfolio/">Portfolio</a></p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#education">Education</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#certifications">Certifications</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<main>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Motivated Computer Science Engineering student seeking a summer internship to apply programming and problem-solving skills in real-world projects and gain industry experience.</p>
+    <p style="margin-top:8px;">Currently exploring real-world applications of programming and automation.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <h3>B.E. in Computer Science Engineering</h3>
+    <p>Adichunchanagiri Institute of Technology</p>
+    <p>2nd Year (2026)</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="grid">
+      <div class="card">C</div>
+      <div class="card">Java</div>
+      <div class="card">Python</div>
+      <div class="card">Data Structures</div>
+      <div class="card">OOP</div>
+      <div class="card">Problem Solving</div>
+      <div class="card">HTML</div>
+      <div class="card">CSS</div>
+      <div class="card">MS Word & PowerPoint</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project">
+        <h3>Automatic Toilet Cleaning Mechanism</h3>
+        <p>Designed a system to automate toilet cleaning using a motorized brush.</p>
+        <p>Aims to reduce manual effort and improve hygiene.</p>
       </div>
-    </nav>
-  </header>
-
-  <main>
-    <section id="about" class="hero">
-      <h1>Hi, I'm Sirigowri K U</h1>
-      <h2>Aspiring Full Stack Developer</h2>
-      <p>I'm passionate about programming, learning new technologies and creating meaningful solutions through code. I build simple, fast and responsive websites using HTML, CSS and JavaScript.</p>
-      <a href="#projects" class="btn">View My Projects</a>
-      <a href="#contact" class="btn btn-outline">Contact Me</a>
-    </section>
-
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul class="cards">
-        <li><strong>HTML</strong><br>Semantic HTML5 structure</li>
-        <li><strong>CSS</strong><br>Flexbox, Grid & Responsive Design</li>
-        <li><strong>JavaScript</strong><br>Interactive web pages</li>
-        <li><strong>Python</strong><br>Programming fundamentals</li>
-        <li><strong>Git & GitHub</strong><br>Version control & GitHub Pages</li>
-      </ul>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="cards">
-        <article>
-          <h3>Personal Portfolio Landing Page</h3>
-          <p>A one-page responsive portfolio showcasing my bio, skills and projects. Built with semantic HTML, Flexbox for navigation and Grid for cards.</p>
-          <p><a href="https://github.com/sirigowriku6-ui/sirigowri-ku-portfolio" target="_blank">View on GitHub →</a></p>
-        </article>
-        <article>
-          <h3>InternCircle - Full Stack Learning</h3>
-          <p>Learning Full Stack Web Development through InternCircle. Completed Project 01: Mastering HTML & CSS fundamentals and publishing a live resume website.</p>
-          <p><a href="https://interncircle.in" target="_blank">InternCircle →</a></p>
-        </article>
+      <div class="project">
+        <h3>Firefighting Robot</h3>
+        <p>Built a robot capable of detecting and controlling fire using a water pump.</p>
+        <p>Demonstrates basic automation and safety applications.</p>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <footer id="contact">
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Introduction to Unix – Infosys Springboard (November 2026)</li>
+      <li>Operating System and Networking – Infosys Springboard</li>
+      <li>AI and Sustainability – IBM SkillsBuild</li>
+    </ul>
+  </section>
+
+  <section id="contact">
     <h2>Contact</h2>
-    <p>Let's connect! I'm open to internships, learning opportunities and collaborations.</p>
     <p>Email: <a href="mailto:sirigowriku4@gmail.com">sirigowriku4@gmail.com</a></p>
+    <p>Phone: +91 9353145799</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/sirigowriku-k-u-658291364">linkedin.com/in/sirigowriku-k-u-658291364</a></p>
+    <p>GitHub: <a href="https://github.com/sirigowriku6-ui">github.com/sirigowriku6-ui</a></p>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 Sirigowri K U | Built with HTML & CSS</p>
+</footer>
+
+</body>
+</html>
